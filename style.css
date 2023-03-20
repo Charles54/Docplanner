@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@keyframes slideinleft {
+  from {
+    transform: translate(-300px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  display: flex;
+  gap: 450px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.health {
+  margin-top: 50px;
+}
+.health img {
+  margin-bottom: 35px;
+}
+.health p {
+  font-size: 35px;
+}
+
+.box {
+  display: flex;
+  gap: 20px;
+  animation-name: slideinleft;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  transform: translate(-150px);
+  animation-fill-mode: forwards;
+}
+@media (min-width: 360px) and (max-width: 1024px) {
+  .box {
+    display: grid;
+  }
+}
+.box .box1, .box .box2, .box .box3 {
+  padding: 30px;
+}
+.box .box1 i, .box .box2 i, .box .box3 i {
+  margin-bottom: 15px;
+}
+.box .box1 p, .box .box2 p, .box .box3 p {
+  font-size: 25px;
+}
+.box .box1 .country, .box .box2 .country, .box .box3 .country {
+  margin-top: 35px;
+}
+.box .box1 button, .box .box2 button, .box .box3 button {
+  padding-left: 0px;
+}
+
+section {
+  margin-top: 70px;
+  gap: 50px;
+  display: flex;
+  margin-bottom: 50px;
+}
+@media (max-width: 576px) {
+  section {
+    display: grid;
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+section .left {
+  padding-right: 100px;
+  width: 700px;
+}
+@media (max-width: 576px) {
+  section .left {
+    text-align: center;
+    padding-right: 0px;
+    width: 100vw;
+  }
+}
+section a {
+  text-decoration: none;
+  color: #00b39b;
+}
+section p {
+  color: #00b39b;
+  font-size: 30px;
+  padding-left: 0px;
+}
+
+.logo_images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  gap: 50px;
+}
+@media (max-width: 576px) {
+  .logo_images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+.logo_images a {
+  filter: grayscale(100%);
+}
+.logo_images a:hover {
+  filter: grayscale(0%);
+}
+
+.main {
+  background-color: rgb(178, 237, 235);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .main {
+    display: grid;
+    height: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .main {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+  }
+}
+.main .left {
+  margin-top: 100px;
+}
+.main .left .p {
+  color: #00b39b;
+  font-size: 35px;
+  font-weight: 300;
+}
+.main .left p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.main .boxx {
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.main .boxx i {
+  color: #00b39b;
+}
+.main .boxs, .main .boxss {
+  display: flex;
+}
+@media (max-width: 576px) {
+  .main .boxs, .main .boxss {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.main .boxs .boxfirst, .main .boxss .boxfirst {
+  margin-top: 30px;
+}
+.main .boxs p, .main .boxss p {
+  font-size: 25px;
+  font-weight: 300;
+  color: #00b39b;
+}
+.main .boxs .p, .main .boxss .p {
+  color: gray;
+  font-size: 12px;
+}
+
+.improve {
+  margin-top: 100px;
+  text-align: center;
+}
+.improve h4 {
+  color: #00b39b;
+  font-weight: 300;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.locations {
+  margin-top: 50px;
+}
+.locations a {
+  padding-left: 0px;
+}
+.locations .locations1, .locations .locations2, .locations .locations3 {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+@media (min-width: 360px) and (max-width: 1024px) {
+  .locations .locations1, .locations .locations2, .locations .locations3 {
+    display: grid;
+  }
+}
+.locations .locations1 img, .locations .locations2 img, .locations .locations3 img {
+  width: 300px;
+  height: 300px;
+}
+.locations .locations1 .openings, .locations .locations2 .openings, .locations .locations3 .openings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.locations .locations1 .openings p, .locations .locations2 .openings p, .locations .locations3 .openings p {
+  color: gray;
+}
+.locations .locations1 .openings button, .locations .locations2 .openings button, .locations .locations3 .openings button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(82, 82, 245);
+  padding: 5px 20px;
+}
+.locations .locations1 .openings a, .locations .locations2 .openings a, .locations .locations3 .openings a {
+  text-decoration: none;
+  color: white;
+  font-size: 9px;
+  padding-left: 0px;
+}
+
+.locationbox {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+.locationbox:hover {
+  box-shadow: 5px 5px 5px gray;
+}
+
+.interesting {
+  text-align: center;
+  margin: 100px 0px;
+}
+.interesting h3 {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.interesting a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+.interesting button {
+  border: none;
+  background-color: rgb(47, 47, 184);
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  color: gray;
+  font-size: 12px;
+}
+footer a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
